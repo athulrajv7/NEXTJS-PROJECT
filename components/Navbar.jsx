@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import styles from '../styles';
 import {navVariants} from '../utils/motion';
-
+  
 const Navbar = () => (
   <motion.nav 
     variants={navVariants} 
@@ -23,6 +23,7 @@ const Navbar = () => (
         leading-[30px] text-white" >
           MY FUTURE
         </h2>
+        <img src="./menu.svg" alt="menu" className="w-[24px] h-[24px] object-contain " />
       </div>
   </motion.nav>
 );
