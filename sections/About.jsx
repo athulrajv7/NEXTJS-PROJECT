@@ -18,6 +18,23 @@ const About = () => (
         title="| About Metaversus"
         textStyles="text-center"
       />
+      <motion.p
+        variants={fadeIn('up','tween', 0.2, 1)}
+        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
+      >
+        <span className="font-extrabold text-white"> My Future </span>
+
+        is a sample website that I will be doing just for a fun and 
+
+        <span className="font-extrabold text-white"> non-romantic </span>
+        
+        way of expressing the <span className="font-extrabold text-white"> knowledge </span> that I've acquired while all the 
+
+        <span className="font-extrabold text-white"> learning processes </span>
+        
+        that I've gone through and not necessarily an og project but a 
+        follow-through of a professional programmer I met via online resources and so.
+      </motion.p>
     </motion.div>
   </section>
 );
