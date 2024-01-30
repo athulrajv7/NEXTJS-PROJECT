@@ -6,7 +6,11 @@ import   styles       from '../styles';
 import { useState } from "react";
 import { exploreWorlds } from '../constants'
 
-const Explore = () => (
+const Explore = () => {
+
+  const [active, setActive] = useState('world-2')
+
+  return(
   <section className={`${styles.paddings}`} id="explore">
     <motion.div 
       variants={staggerContainer}
@@ -26,6 +30,8 @@ const Explore = () => (
             key={index}
             {...world}
             index={index}
+            active={active}
+            handleClick={setActive}
           />
         ))}
 
@@ -33,5 +39,6 @@ const Explore = () => (
     </motion.div>
   </section>
 );
+}
 
 export default Explore;
