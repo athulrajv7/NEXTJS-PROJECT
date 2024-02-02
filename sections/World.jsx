@@ -39,7 +39,6 @@ const World = () => (
         </div>
       </motion.div>
     </motion.div>
-    World section
   </section>
 );
 
